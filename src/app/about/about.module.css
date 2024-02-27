@@ -1,0 +1,34 @@
+.main {
+  display: flex;
+  align-items: center;
+  padding: 3rem 10rem;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.textContainer h2 {
+  color: #2d74fd;
+  font-weight: bolder;
+}
+
+.textContainer h1 {
+  font-size: 3rem;
+}
+
+.textContainer p {
+  text-align: justify;
+}
+
+.textContainer .divMargin {
+  margin-bottom: 1rem;
+}
+
+.misc {
+  display: flex;
+  gap: 100px;
+}
+
+.misc h3 {
+  font-weight: bolder;
+  color: #2d74fd;
+}

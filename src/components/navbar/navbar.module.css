@@ -1,0 +1,66 @@
+.container {
+  background-color: 0f0b24;
+  color: white;
+  height: 80px;
+  align-items: center;
+  padding: 0rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  z-index: 99;
+  /* position: absolute; */
+}
+
+.LinksStyles {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  padding: 0.5rem;
+}
+
+.activeLinkStyles {
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+}
+
+.LinksContainer {
+  justify-content: space-between;
+  height: max-content;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.menuButton,
+.mobileLinks {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .LinksContainer {
+    display: none;
+  }
+
+  .mobileLinks {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    height: calc(100vh - 100px);
+    background-color: 0f0b24;
+    width: 50%;
+    text-align: center;
+  }
+
+  .menuButton {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,7 @@
+.container {
+  padding: 2rem 10rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  max-width: calc(100vw - 10rem);
+  gap: 50px;
+}

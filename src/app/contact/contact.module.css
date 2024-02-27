@@ -1,0 +1,42 @@
+.main {
+  display: flex;
+  align-items: center;
+  padding: 3rem 10rem;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 30rem;
+  background-color: #2e2b44;
+  color: gray;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.textarea {
+  width: 30rem;
+  background-color: #2e2b44;
+  color: gray;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  resize: none;
+  font-family: sans-serif;
+}
+
+.sendButton {
+  width: 32rem;
+  /* margin-right: 1rem; */
+  height: 3rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  background-color: #2d74fd;
+}

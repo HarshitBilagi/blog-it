@@ -1,10 +1,55 @@
 .main {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  padding: 3rem 10rem;
+  justify-content: space-between;
+  /* height: 100vh; */
+  gap: 100px;
+}
+
+.textContainer {
+  min-height: 7rem;
+  width: 31rem;
+}
+
+.textContainer h1 {
+  font-weight: bolder;
+  font-size: 5rem;
+}
+
+.textContainer p {
+  width: 31rem;
+  text-align: justify;
+  margin: 1rem 0;
+}
+
+.textContainer .homeButtons {
+  /* padding: 1rem; */
+  justify-content: space-between;
+}
+
+.textContainer button {
+  width: 7.5rem;
+  margin-right: 1rem;
+  height: 3rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.textContainer .learnMore {
+  color: white;
+  background-color: #2d74fd;
+}
+.textContainer .contact {
+  background-color: white;
+  color: black;
+}
+.textContainer .brandsImage {
+  filter: grayscale(1);
+
+  .imageContainer {
+    min-height: 6rem;
+  }
 }
 
 .description {

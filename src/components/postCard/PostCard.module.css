@@ -1,0 +1,31 @@
+.CardContainer {
+  width: fit-content;
+  height: fit-content;
+  display: grid;
+}
+
+.top {
+  display: flex;
+}
+
+.top .postCardImage {
+  width: 300px;
+}
+
+.date {
+  transform: rotate(270deg);
+}
+
+.bottom .title {
+  color: white;
+  margin-bottom: 1rem;
+}
+.bottom .desc {
+  color: gray;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.bottom .linkStyles {
+  color: white;
+  margin-bottom: 1rem;
+}
