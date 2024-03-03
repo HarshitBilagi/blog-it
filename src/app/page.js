@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
-  
+
   return (
     <div className={styles.main}>
       <div className={styles.textContainer}>
@@ -12,7 +12,9 @@ export default function Home() {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div className={styles.homeButtons}>
-          <button className={styles.learnMore}>Learn More</button>
+          <button className={styles.learnMore}>
+            Learn More
+          </button>
           <button className={styles.contact}>Contact</button>
         </div>
         <Image

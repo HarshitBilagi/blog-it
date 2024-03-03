@@ -1,0 +1,11 @@
+.AuthorPub {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+  
+  .textContainer .avatar {
+    border-radius: 50%;
+  }
+  

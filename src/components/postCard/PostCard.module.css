@@ -1,5 +1,5 @@
 .CardContainer {
-  width: fit-content;
+  max-width: max-content;
   height: fit-content;
   display: grid;
 }
@@ -14,6 +14,9 @@
 
 .date {
   transform: rotate(270deg);
+  width: max-content;
+  height: max-content;
+  position: relative;
 }
 
 .bottom .title {

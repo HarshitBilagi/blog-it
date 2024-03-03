@@ -3,6 +3,11 @@ import Image from "next/image";
 import styles from "./contact.module.css";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Blog-it Conatct page",
+  description: "Contact page for Blog-it app built with Next.js and MongoDB",
+};
+
 export default function Contact() {
   return (
     <main className={styles.main}>

@@ -3,23 +3,25 @@ import styles from "./postCard.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function postCard() {
+export default function postCard({ post }) {
   return (
     <div className={styles.CardContainer}>
       <div className={styles.top}>
         <Image
           className={styles.postCardImage}
-          src="https://images.unsplash.com/photo-1591293835940-934a7c4f2d9b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={post.img}
           alt=""
           width={300}
           height={400}
         />
-        <p className={styles.date}>date</p>
+        <div className={styles.date}>
+          <p>{post.date.toString().slice(4, 16)}</p>
+        </div>
       </div>
       <div className={styles.bottom}>
-        <h2>Title</h2>
-        <p>Desc.</p>
-        <Link className={styles.linkStyles} href="">
+        <h2>{post.title}</h2>
+        {/* <p>{post.desc}</p> */}
+        <Link className={styles.linkStyles} href={`/blog/${post.slug}`}>
           Read More...
         </Link>
       </div>

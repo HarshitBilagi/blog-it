@@ -1,6 +1,11 @@
 import Image from "next/image";
 import styles from "./about.module.css";
 
+export const metadata = {
+  title: "Blog-it About page",
+  description: "About page for Blog-it app built with Next.js and MongoDB",
+};
+
 export default function About() {
   return (
     <div className={styles.main}>
