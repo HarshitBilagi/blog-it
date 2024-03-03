@@ -1,10 +1,9 @@
-"use client";
 import Image from "next/image";
 import styles from "./contact.module.css";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Blog-it Conatct page",
+  title: "Conatct page",
   description: "Contact page for Blog-it app built with Next.js and MongoDB",
 };
 
@@ -12,7 +11,7 @@ export default function Contact() {
   return (
     <main className={styles.main}>
       <div className={styles.imageContainer}>
-        <Image src="/contact.png" width={500} height={500} alt=""></Image>
+        <Image src="/contact.png" width={500} height={500} alt="" priority={false}></Image>
       </div>
       <div className={styles.formContainer}>
         <form action="" className={styles.form}>

@@ -2,15 +2,16 @@ import Image from "next/image";
 import styles from "./SinglePost.module.css";
 import PostUser from "@/components/postUser/PostUser";
 import { getPost } from "../../../../lib/data";
+import Head from "next/head";
 
-export const generateMetadata = async ({params}) => {
-  const {slug} = params;
+export const generateMetadata = async ({ params }) => {
+  const { slug } = params;
   const post = await getPost(slug);
   return {
     title: post.title,
     description: post.desc,
   };
-}
+};
 
 // const getData = async (slug) => {
 //   const res = await fetch( `https://jsonplaceholder.typicode.com/posts/${slug}`, {cache: "force-cache"});
@@ -31,6 +32,9 @@ const SinglePost = async ({ params }) => {
 
   return (
     <div className={styles.container}>
+      <Head>
+        <title>{post.title}</title>
+      </Head>
       <div className={styles.imageContainer}>
         <Image src={post.img} alt="" width={300} height={500} />
       </div>

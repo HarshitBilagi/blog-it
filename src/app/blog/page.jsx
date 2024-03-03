@@ -3,7 +3,7 @@ import styles from "./blog.module.css";
 import { getPosts } from "../../../lib/data";
 
 export const metadata = {
-  title: "Blog-it Blog page",
+  title: "Blog page",
   description: "Blog page for Blog-it app built with Next.js and MongoDB",
 };
 
