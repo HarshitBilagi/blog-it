@@ -4,7 +4,6 @@ export const authConfig = {
   },
   providers: [],
   callbacks: {
-    // FOR MORE DETAIL ABOUT CALLBACK FUNCTIONS CHECK https://next-auth.js.org/configuration/callbacks
     async jwt({ token, user }) {
       if (user) {
         token.id = user.id;

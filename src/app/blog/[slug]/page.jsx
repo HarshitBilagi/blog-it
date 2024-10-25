@@ -6,13 +6,12 @@ import { getPost } from "@/lib/data";
 
 // FETCH DATA WITH AN API
 const getData = async (slug) => {
-  const res = await fetch(`http://localhost:3000/api/blog/${slug}`);  
+  const res = await fetch(`http://localhost:3000/api/blog/${slug}`);
   // const res = await fetch(`http://localhost:3000/api/blog/${slug}`, {cache: "no-store"});  // AVOID CACHING TO FETCH CONSTANTLY CHANGING DATA
 
   if (!res.ok) {
     throw new Error("Something went wrong");
   }
-
   return res.json();
 };
 
@@ -40,7 +39,7 @@ const SinglePostPage = async ({ params }) => {
     <div className={styles.container}>
       {post.img && (
         <div className={styles.imgContainer}>
-          <Image src={post.img} alt="" fill className={styles.img} />
+          <Image src={post.img} alt={post.slug} fill className={styles.img} />
         </div>
       )}
       <div className={styles.textContainer}>

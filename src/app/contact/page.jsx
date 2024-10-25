@@ -3,7 +3,7 @@ import styles from "./contact.module.css";
 
 export const metadata = {
   title: "Contact Page",
-  description: "Contact description",
+  description: "Contact Page description",
 };
 
 const ContactPage = () => {
